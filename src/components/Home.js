@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import API from '../API';
 
-import { POSTER_SIZE, BACKDROP_SIZE, IMAGE_BASEURL, IMAGE_BASE_URL } from '../config';
+import { POSTER_SIZE, BACKDROP_SIZE, IMAGE_BASE_URL } from '../config';
 import { useHomeFetch } from '../hooks/useHomeFetch';
 import HeroImage from './HeroImage';
 import NOIMage from '../images/no_image.jpg';
