@@ -3,7 +3,7 @@ import API from '../API';
 
 const initialState = {
     page: 0,
-    results: [],
+    results: [0],
     total_pages: 0,
     total_results: 0
 };

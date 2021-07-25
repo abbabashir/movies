@@ -1,0 +1,18 @@
+-------------------- Auto-Git Log --------------------
+		Sun Jul 25 2021 07:29:33 GMT-0700 (Pacific Daylight Time)
+------------------------------------------------------
+
+Modified files:
+* src/components/HeroImage/HeroImage.styles.js
+* src/components/Home.js
+
+
+Created files:
+* .autogit/logs/log-25-6-2021-6-58-24.txt
+
+
+Deleted files:
+* src/App.test.js
+
+
+Renamed files:
