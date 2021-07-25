@@ -1,0 +1,18 @@
+-------------------- Auto-Git Log --------------------
+		Sun Jul 25 2021 15:12:37 GMT-0700 (Pacific Daylight Time)
+------------------------------------------------------
+
+Modified files:
+* src/components/Header/Header.styles.js
+* src/components/Header/index.js
+
+
+Created files:
+* .autogit/logs/log-25-6-2021-14-40-52.txt
+* src/hooks/index.js
+
+
+Deleted files:
+
+
+Renamed files:
