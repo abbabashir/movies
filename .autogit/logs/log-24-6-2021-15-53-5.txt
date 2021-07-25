@@ -1,0 +1,33 @@
+-------------------- Auto-Git Log --------------------
+		Sat Jul 24 2021 15:53:05 GMT-0700 (Pacific Daylight Time)
+------------------------------------------------------
+
+Modified files:
+* package-lock.json
+* package.json
+* public/favicon.ico
+* public/index.html
+* src/App.js
+* src/index.js
+
+
+Created files:
+* .autogit/autogit.json
+* .env
+* src/API.js
+* src/GlobalStyle.js
+* src/components/Header/Header.styles.js
+* src/components/Header/index.js
+* src/components/Home.js
+* src/config.js
+* src/helpers.js
+* src/images/no_image.jpg
+* src/images/react-movie-logo.svg
+* src/images/search-icon.svg
+* src/images/tmdb_logo.svg
+
+
+Deleted files:
+
+
+Renamed files:
