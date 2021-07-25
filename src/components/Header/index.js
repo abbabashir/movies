@@ -39,8 +39,8 @@ const TMDBLogoImg = styled.img`
 const Header = () => (
     <Wrapper>
         <Content>
-            <LogoImg src={RMDBLogo.svg} />
-            <TMDBLogoImg src={TMDBLogo.svg} />
+            <LogoImg src={RMDBLogo} />
+            <TMDBLogoImg src={TMDBLogo} />
         </Content>
     </Wrapper>
 );
