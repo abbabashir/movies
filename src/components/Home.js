@@ -3,6 +3,7 @@ import API from '../API';
 
 import { POSTER_SIZE, BACKDROP_SIZE, IMAGE_BASE_URL } from '../config';
 import HeroImage from './HeroImage';
+import Grid from './Grid';
 import NOIMage from '../images/no_image.jpg';
 
 
@@ -51,6 +52,11 @@ const Home = () => {
                 text={state.results[0].overview}
             />
         ) : null}
+        <Grid header="Popular Movies">
+            {state.results.map(movie => (
+                <div>{movie.title}</div>
+            ))}
+        </Grid>
         </>
     );
 };

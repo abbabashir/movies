@@ -36,21 +36,25 @@ position: absolute;
 bottom: 40px;
 margin-right: 20px;
 margin-height: 100px;
-color: var(--white);
+color: #fff;
 
 h1{
-    font-size: var(--fontSuperBig);
+    font-size: 2.5rem;
 
     @media screen and (max-width: 720){
-        font-size: var(--fontBg);
+        font-size: 1.5rem;
     }
 
     p{
-        font-size: var(--fontMed);
+        font-size: 1.2rem;
 
         @media screen and (max-width: 720px){
-            font-size: var(--fontsmall);
+            font-size: 1rem;
         }
     }
+}
+
+@media screen and (max-width: 720px){
+    max-width: 100%;
 }
 `;
