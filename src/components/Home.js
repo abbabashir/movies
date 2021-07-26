@@ -4,7 +4,8 @@ import API from '../API';
 import { POSTER_SIZE, BACKDROP_SIZE, IMAGE_BASE_URL } from '../config';
 import HeroImage from './HeroImage';
 import Grid from './Grid';
-import NOIMage from '../images/no_image.jpg';
+import Thumb from './Thumb';
+import NoImage from '../images/no_image.jpg';
 
 
 const initialState = {
@@ -54,7 +55,16 @@ const Home = () => {
             ) : null}
             <Grid header="Popular Movies">
                 {state.results.map(movie => (
-                    <div key={movie.id}>{movie.title}</div>
+                    <Thumb
+                        key={movie.id}
+                        clickable
+                        image={
+                            movie.poster_path
+                                ? IMAGE_BASE_URL + POSTER_SIZE + movie.poster_path
+                                : NoImage
+                        }
+                        movieID={movie.id}
+                    />
                 ))}
             </Grid>
         </>
