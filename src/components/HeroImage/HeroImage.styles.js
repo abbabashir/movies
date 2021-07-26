@@ -7,6 +7,20 @@ background: linear-gradient(
     100%
 ),
 url(${({ image }) => image}), var(--darkGrey);
+background-size: 100%, cover;
+background-position: center;
+height: 600px;
+position: relative;
+animation: animationHeroImage 1s;
+
+@keyframes animationHeroImage {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
 `;
 
 export const Content = styled.div`

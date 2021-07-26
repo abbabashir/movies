@@ -1,0 +1,15 @@
+-------------------- Auto-Git Log --------------------
+		Mon Jul 26 2021 04:31:46 GMT-0700 (Pacific Daylight Time)
+------------------------------------------------------
+
+Modified files:
+* src/components/HeroImage/HeroImage.styles.js
+
+
+Created files:
+
+
+Deleted files:
+
+
+Renamed files:
