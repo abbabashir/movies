@@ -1,7 +1,7 @@
 import React from 'react';
 //import { ReactComponent as RMDBLogo } from '../../images/react-movie-logo.svg';
-import RMDBLogo from '../../images/download.png';
-import { ReactComponent as TMDBLogo} from '../../images/tmdb_logo.svg';
+import RMDBLogo from '../../images/delray.png';
+import TMDBLogo from '../../images/flash.jpg';
 
 import styled from 'styled-components';
 

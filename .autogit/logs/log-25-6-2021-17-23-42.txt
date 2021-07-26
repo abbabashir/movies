@@ -1,0 +1,18 @@
+-------------------- Auto-Git Log --------------------
+		Sun Jul 25 2021 17:23:42 GMT-0700 (Pacific Daylight Time)
+------------------------------------------------------
+
+Modified files:
+* src/components/Header/index.js
+* src/images/react-movie-logo.svg
+
+
+Created files:
+* .autogit/logs/log-25-6-2021-16-48-55.txt
+* src/images/download.png
+
+
+Deleted files:
+
+
+Renamed files:
