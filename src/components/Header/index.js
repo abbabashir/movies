@@ -1,13 +1,13 @@
 import React from 'react';
 //import { ReactComponent as RMDBLogo } from '../../images/react-movie-logo.svg';
-import RMDBLogo from '../../images/delray.png';
-import TMDBLogo from '../../images/flash.jpg';
+import RMDBLogo from '../../images/react-movie-logo.svg';
+import TMDBLogo from '../../images/tmdb_logo.svg';
 
 import styled from 'styled-components';
 
 
 const Wrapper = styled.div`
-  background: var(--darkGrey);
+  background-color: #000;
   padding: 0 20px;
 `;
 

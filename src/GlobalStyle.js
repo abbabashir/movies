@@ -3,14 +3,14 @@ import { createGlobalStyle } from 'styled-components';
 export const GlobalStyle = createGlobalStyle`
 :root{
     --maxWidth: 1280;
-    --white: #fff
-    --lightGrey: #eee
-    --medGrey: #35353535
-    --darkGrey: #1c1c1c
+    --white: #fff;
+    --lightGrey: #eee;
+    --medGrey: #35353535;
+    --darkGrey: #1c1c1c;
     --fontSuperBig: 2.5rem;
     --fontBig: 1.5rem;
-    --fontMed: 1.2rem
-    --fontSmall: 1rem
+    --fontMed: 1.2rem;
+    --fontSmall: 1rem;
 }
 
 *{
