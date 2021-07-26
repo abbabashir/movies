@@ -8,11 +8,11 @@ import NOIMage from '../images/no_image.jpg';
 
 
 const initialState = {
-        page: 0,
-        results: [],
-        total_pages: 0,
-        total_results: 0
-    }
+    page: 0,
+    results: [],
+    total_pages: 0,
+    total_results: 0
+}
 
 
 
@@ -30,8 +30,8 @@ const Home = () => {
 
             setState(prev => ({
                 ...movies,
-                results: 
-                page > 1 ? [...prev.results, ...movies.results] : [...movies.results]
+                results:
+                    page > 1 ? [...prev.results, ...movies.results] : [...movies.results]
             }));
         } catch (error) {
             setError(true);
@@ -45,18 +45,18 @@ const Home = () => {
     }, []);
     return (
         <>
-        {state.results[0] ? (
-            <HeroImage
-                image={`${IMAGE_BASE_URL}${BACKDROP_SIZE}${state.results[0].backdrop_path}`}
-                title={state.results[0].original_title}
-                text={state.results[0].overview}
-            />
-        ) : null}
-        <Grid header="Popular Movies">
-            {state.results.map(movie => (
-                <div>{movie.title}</div>
-            ))}
-        </Grid>
+            {state.results[0] ? (
+                <HeroImage
+                    image={`${IMAGE_BASE_URL}${BACKDROP_SIZE}${state.results[0].backdrop_path}`}
+                    title={state.results[0].original_title}
+                    text={state.results[0].overview}
+                />
+            ) : null}
+            <Grid header="Popular Movies">
+                {state.results.map(movie => (
+                    <div key={movie.id}>{movie.title}</div>
+                ))}
+            </Grid>
         </>
     );
 };
