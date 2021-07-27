@@ -7,6 +7,7 @@ import Grid from './Grid';
 import Thumb from './Thumb';
 import Spinner from './Spinner';
 import SearchBar from './SearchBar';
+import Button from './Button';
 import NoImage from '../images/no_image.jpg';
 
 
@@ -24,6 +25,7 @@ const Home = () => {
     const [state, setState] = useState(initialState);
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(false);
+    const [isLoadingMore, setIsLoadingMore] = useState(false);
 
 
     const fetchMovies = async (page, searchTerm = "") => {
@@ -49,8 +51,20 @@ const Home = () => {
         setState(initialState);
         fetchMovies(1, searchTerm);
     }, [searchTerm]);
+
+    //Load More Movies
+    useEffect(() => {
+        if (!isLoadingMore) return;
+        
+        fetchMovies(state.page + 1, searchTerm);
+        setIsLoadingMore(false);
+    }, [isLoadingMore, searchTerm, state.page])
+
+    if (error) return <div>Something Went Wrong...</div>;
+
     return (
         <>
+        {/* !searchTerm */}
             {state.results[0] ? (
                 <HeroImage
                     image={`${IMAGE_BASE_URL}${BACKDROP_SIZE}${state.results[0].backdrop_path}`}
@@ -59,7 +73,7 @@ const Home = () => {
                 />
             ) : null}
             <SearchBar setSearchTerm={setSearchTerm}/>
-            <Grid header="Popular Movies">
+            <Grid header={searchTerm ? "search Result" : "Popular Movies"}>
                 {state.results.map(movie => (
                     <Thumb
                         key={movie.id}
@@ -73,7 +87,10 @@ const Home = () => {
                     />
                 ))}
             </Grid>
-            <Spinner/>
+            {loading && <Spinner/>}
+            {state.page < state.total_pages && !loading && (
+                <Button text='Load More' callback={() => setIsLoadingMore(true)} />
+            )}
         </>
     );
 };
