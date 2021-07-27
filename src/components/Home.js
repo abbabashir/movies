@@ -46,7 +46,7 @@ const Home = () => {
 
     //Initial Search
     useEffect(() => {
-        //setState[initialState];
+        setState(initialState);
         fetchMovies(1, searchTerm);
     }, [searchTerm]);
     return (
