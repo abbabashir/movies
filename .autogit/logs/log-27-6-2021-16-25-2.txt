@@ -1,0 +1,22 @@
+-------------------- Auto-Git Log --------------------
+		Tue Jul 27 2021 16:25:02 GMT-0700 (Pacific Daylight Time)
+------------------------------------------------------
+
+Modified files:
+* src/components/Header/index.js
+* src/components/Home.js
+
+
+Created files:
+* .autogit/logs/log-27-6-2021-3-7-52.txt
+* .vscode/launch.json
+* src/components/Button/index.js
+* src/components/Movie.js
+* src/components/NotFound.js
+* src/okay.java
+
+
+Deleted files:
+
+
+Renamed files:
