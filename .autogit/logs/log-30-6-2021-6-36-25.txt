@@ -1,0 +1,21 @@
+-------------------- Auto-Git Log --------------------
+		Fri Jul 30 2021 06:36:25 GMT-0700 (Pacific Daylight Time)
+------------------------------------------------------
+
+Modified files:
+* src/App.js
+* src/components/Header/index.js
+* src/components/Movie.js
+* src/components/NotFound.js
+* src/components/Thumb/index.js
+
+
+Created files:
+* .autogit/logs/log-27-6-2021-16-25-2.txt
+
+
+Deleted files:
+* src/okay.java
+
+
+Renamed files:
